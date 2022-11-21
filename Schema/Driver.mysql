@@ -1,0 +1,13 @@
+use uberdriver;
+
+create table driver (
+`id` bigint not null auto_increment,
+`driver_id` varchar(50) not null,
+`name` varchar(50) not null,
+`phone_no` varchar(50) not null,
+`email` varchar(50) not null,
+`deleted` tinyint(1) default 0,
+`created` timestamp not null default current_timestamp,
+`updated` timestamp not null default current_timestamp,
+primary key(`id`),
+unique key(`driver_id`));

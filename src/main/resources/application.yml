@@ -1,0 +1,24 @@
+server:
+  port: 8090
+
+mysql:
+  demoConfig:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://localhost:3306/student?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&allowPublicKeyRetrival=true
+    partitiionCount: 2
+    userName: root
+    password: Shiva1997@
+    cachePrepStmts: ture
+    prepStmtCacheSize: 250
+    prepStmtCacheSqlLimit: 2048
+    maximumPoolSize: 50
+    connectionTimeOut: 30000
+    leakDetectionThreshold: 0
+
+spring:
+  profile:
+    active: dev
+
+com:
+  zaxxer:
+    HikariConfig: DEBUG
